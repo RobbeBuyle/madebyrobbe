@@ -12,7 +12,8 @@ export default () => {
           node {
             title
             id
-            desc
+            tags
+            slug
           }
         }
       }
@@ -25,9 +26,18 @@ export default () => {
       {projects.map(({ node: project }) => {
         const id = project.id
         const title = project.title
-        const desc = project.desc
+        const tags = project.tags
+        const slug = project.slug
 
-        return <ProjectPreview title={title} desc={desc} id={id} />
+        return (
+          <ProjectPreview
+            title={title}
+            tags={tags}
+            id={id}
+            key={id}
+            slug={slug}
+          />
+        )
       })}
     </Layout>
   )

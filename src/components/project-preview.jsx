@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const ProjectPreview = ({ slug, desc, title }) => {
+const ProjectPreview = ({ slug, tags, title }) => {
   return (
     <article>
       <Link to={`/${slug}`}>
         <h3>{title}</h3>
       </Link>
-      <p>{desc}</p>
+      <p>{tags}</p>
     </article>
   )
 }

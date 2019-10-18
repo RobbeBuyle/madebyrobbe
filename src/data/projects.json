@@ -2,8 +2,8 @@
   {
     "id": "0",
     "title": "Spaar",
+    "slug": "spaar",
     "tags": "#dev #react #node",
-    "thumb": "spaar_thumb.jpg",
     "img": "spaar_img.jpg",
     "desc": "voor het vak WAD moesten we een CRUD app maken...",
     "link": "http://spaar.herokuapp.com",
@@ -14,8 +14,8 @@
   {
     "id": "1",
     "title": "Electric Avenue",
+    "slug": "electric-avenue",
     "tags": "#motion #AE #intro",
-    "thumb": "electric_avenue_thumb.jpg",
     "img": "electric_avenue_img.jpg",
     "desc": "voor het vak MO2 moesten we een intro maken...",
     "link": "https://vimeo.com/338678067",
@@ -26,8 +26,8 @@
   {
     "id": "2",
     "title": "Whole Earth Catalog",
+    "slug": "whole-earth-catalog",
     "tags": "#UX #Sketch #app",
-    "thumb": "wec_thumb.jpg",
     "img": "wec_img.jpg",
     "desc": "voor het vak CMD2 moesten we een app maken...",
     "link": "https://behance.net",
@@ -38,8 +38,8 @@
   {
     "id": "3",
     "title": "Space Survivor 9000",
+    "slug": "space-survivor-9000",
     "tags": "#Phaser3 #PhP #game",
-    "thumb": "ss9000_thumb.jpg",
     "img": "ss9000_img.jpg",
     "desc": "voor het vak COD moesten we een game maken...",
     "link": "http://madebyrob.be/ss9000",
@@ -50,8 +50,8 @@
   {
     "id": "4",
     "title": "Deliveroo App",
+    "slug": "deliveroo-app",
     "tags": "#motion #AE #onboarding",
-    "thumb": "deliveroo_thumb.jpg",
     "img": "deliveroo_img.jpg",
     "desc": "voor het vak MO2 moesten we een animatie maken...",
     "link": "http://vimeo.com",
@@ -62,8 +62,8 @@
   {
     "id": "5",
     "title": "Radio+",
+    "slug": "radio+",
     "tags": "#design #rebrand #responsive",
-    "thumb": "radio+.jpg",
     "img": "radio+.jpg",
     "desc": "voor het vak Minor Design moesten we een site maken...",
     "link": "https://behance.net",
