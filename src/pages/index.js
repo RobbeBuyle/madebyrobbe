@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import Layout from "../components/layout"
-import ProjectPreview from "../components/project-preview"
+import Layout from "../components/Layout"
+import ProjectPreview from "../components/Project-preview"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -14,6 +14,13 @@ export default () => {
             id
             tags
             slug
+            img {
+              childImageSharp {
+                fluid(quality: 90, maxWidth: 1600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
@@ -28,10 +35,12 @@ export default () => {
         const title = project.title
         const tags = project.tags
         const slug = project.slug
+        const imageData = project.img.childImageSharp.fluid
 
         return (
           <ProjectPreview
             title={title}
+            imageData={imageData}
             tags={tags}
             id={id}
             key={id}

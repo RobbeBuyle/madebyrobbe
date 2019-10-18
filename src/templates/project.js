@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Project from "../components/Project"
 
 export const query = graphql`
@@ -13,6 +13,13 @@ export const query = graphql`
       tools
       desc
       link
+      img {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   }
 `
@@ -26,11 +33,13 @@ const ProjectTemplate = ({ data }) => {
   const tools = project.tools
   const desc = project.desc
   const link = project.link
+  const imageData = project.img.childImageSharp.fluid
 
   return (
     <Layout>
       <Link to="/">Back to all projects</Link>
       <Project
+        imageData={imageData}
         title={title}
         tags={tags}
         date={date}

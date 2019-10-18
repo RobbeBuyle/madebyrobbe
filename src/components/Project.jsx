@@ -1,8 +1,19 @@
 import React from "react"
+import Image from "gatsby-image"
 
-const Project = ({ title, tags, date, customer, tools, desc, link }) => {
+const Project = ({
+  title,
+  tags,
+  date,
+  customer,
+  tools,
+  desc,
+  link,
+  imageData,
+}) => {
   return (
     <article>
+      <Image fluid={imageData} />
       <h1>{title}</h1>
       <p>{tags}</p>
       <time>{date}</time>
