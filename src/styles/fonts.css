@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Biotif";
+  font-weight: regular;
+  src: url("../../static/fonts/Biotif-Book.woff"),
+    url("../../static/fonts/Biotif-Book.woff2");
+}
+
+@font-face {
+  font-family: "Biotif";
+  font-weight: bold;
+  src: url("../../static/fonts/Biotif-Bold.woff"),
+    url("../../static/fonts/Biotif-Bold.woff2");
+}
+
+@font-face {
+  font-family: "Biotif";
+  font-weight: bolder;
+  src: url("../../static/fonts/Biotif-ExtraBold.woff"),
+    url("../../static/fonts/Biotif-ExtraBold.woff2");
+}
+
+@font-face {
+  font-family: "Biotif";
+  font-weight: 500;
+  src: url("../../static/fonts/Biotif-Medium.woff"),
+    url("../../static/fonts/Biotif-Medium.woff2");
+}

@@ -21,7 +21,7 @@ const Header = () => {
     <header>
       <h1>Robbe: digital designer/ developer</h1>
       <div>
-        <p>
+        <p className={styles.txtBubbleRes}>
           Hey!
           <span role="img" aria-label="wave">
             {" "}
@@ -29,11 +29,11 @@ const Header = () => {
           </span>
           I'm Robbe.
         </p>
-        <p>
+        <p className={styles.txtBubbleRes}>
           I'm a <strong>digital designer / developer</strong> ready to help
           shape the future.
         </p>
-        <p>contact</p>
+        <p className={styles.txtBubbleSent}>contact</p>
       </div>
       <Img
         fluid={data.file.childImageSharp.fluid}

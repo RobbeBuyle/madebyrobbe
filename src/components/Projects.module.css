@@ -1,0 +1,3 @@
+.sectionTitle {
+  composes: sectionTitle from "../styles/typo.module.css";
+}

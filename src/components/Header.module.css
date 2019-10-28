@@ -1,3 +1,11 @@
 .headerImg {
   border-radius: 100%;
 }
+
+.txtBubbleRes {
+  composes: txtBubbleRes from "../styles/typo.module.css";
+}
+
+.txtBubbleSent {
+  composes: txtBubbleSent from "../styles/typo.module.css";
+}

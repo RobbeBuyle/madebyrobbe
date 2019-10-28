@@ -30,7 +30,7 @@ const Projects = () => {
 
   return (
     <section>
-      <h2>Some of my work</h2>
+      <h2 className={styles.sectionTitle}>Some of my work</h2>
       {projects.map(({ node: project }) => {
         const id = project.id
         const title = project.title

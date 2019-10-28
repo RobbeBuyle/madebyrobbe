@@ -6,15 +6,15 @@ import React from "react"
 import Footer from "../components/Footer.jsx"
 import Nav from "../components/Nav.jsx"
 
-import "./layout.css"
+import "../styles/index.css"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="container">
       <Nav />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
 
