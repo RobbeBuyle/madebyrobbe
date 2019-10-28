@@ -19,6 +19,7 @@
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-json": "^2.2.15",
     "gatsby-transformer-sharp": "^2.2.23",
+    "lottie-web": "^5.5.9",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },

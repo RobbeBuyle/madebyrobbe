@@ -1,53 +1,16 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 
-import Layout from "../components/Layout"
-import ProjectPreview from "../components/Project-preview"
+import Layout from "../components/Layout.jsx"
+import Header from "../components/Header.jsx"
+import Projects from "../components/Projects.jsx"
+import About from "../components/About.jsx"
 
 export default () => {
-  const data = useStaticQuery(graphql`
-    {
-      allProjectsJson {
-        edges {
-          node {
-            title
-            id
-            tags
-            slug
-            img {
-              childImageSharp {
-                fluid(quality: 90, maxWidth: 1600) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-  const projects = data.allProjectsJson.edges
   return (
     <Layout>
-      <h1>hej!</h1>
-      {projects.map(({ node: project }) => {
-        const id = project.id
-        const title = project.title
-        const tags = project.tags
-        const slug = project.slug
-        const imageData = project.img.childImageSharp.fluid
-
-        return (
-          <ProjectPreview
-            title={title}
-            imageData={imageData}
-            tags={tags}
-            id={id}
-            key={id}
-            slug={slug}
-          />
-        )
-      })}
+      <Header />
+      <Projects />
+      <About />
     </Layout>
   )
 }
