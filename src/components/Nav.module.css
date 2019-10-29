@@ -1,0 +1,23 @@
+.nav {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItem {
+  composes: navItem from "../styles/typo.module.css";
+  margin-left: 3rem;
+}
+
+.visualyHidden {
+  composes: visualyHidden from "../styles/typo.module.css";
+}
+
+.navLogo {
+  font-family: Biotif, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 2rem;
+  font-weight: bolder;
+}

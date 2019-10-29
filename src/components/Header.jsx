@@ -18,27 +18,38 @@ const Header = () => {
   `)
 
   return (
-    <header>
-      <h1>Robbe: digital designer/ developer</h1>
-      <div>
-        <p className={styles.txtBubbleRes}>
-          Hey!
-          <span role="img" aria-label="wave">
-            {" "}
-            👋{" "}
-          </span>
-          I'm Robbe.
-        </p>
-        <p className={styles.txtBubbleRes}>
-          I'm a <strong>digital designer / developer</strong> ready to help
-          shape the future.
-        </p>
-        <p className={styles.txtBubbleSent}>contact</p>
-      </div>
+    <header className={styles.header}>
+      <h1 className={styles.visualyHidden}>
+        Robbe: digital designer/ developer
+      </h1>
       <Img
         fluid={data.file.childImageSharp.fluid}
         className={styles.headerImg}
       />
+      <div className={styles.chatBox}>
+        <div className={styles.tag}>
+          <p className={styles.txtBubbleRes}>
+            Hey!
+            <span role="img" aria-label="wave">
+              {" "}
+              👋{" "}
+            </span>
+            I'm Robbe.
+          </p>
+        </div>
+        <div className={styles.tag}>
+          <p className={styles.txtBubbleRes}>
+            I'm a{" "}
+            <strong className={styles.strong}>
+              digital designer / developer
+            </strong>{" "}
+            ready to help shape the future.
+          </p>
+        </div>
+        <div className={styles.tag_right}>
+          <p className={styles.txtBubbleSent}>contact</p>
+        </div>
+      </div>
     </header>
   )
 }

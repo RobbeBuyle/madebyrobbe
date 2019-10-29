@@ -1,5 +1,50 @@
+.header {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: chat pf; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    flex-flow: row-reverse nowrap;
+  }
+}
+
 .headerImg {
   border-radius: 100%;
+  width: 16rem;
+  height: 16rem;
+  /* grid-area: pf; */
+  display: block;
+  @media (--lg) {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.chatBox {
+  /* grid-area: chat; */
+  height: 30rem;
+  width: auto;
+  min-width: 20rem;
+  max-width: 38rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.strong {
+  composes: strong from "../styles/typo.module.css";
+}
+
+.tag {
+  composes: tag from "../styles/typo.module.css";
+}
+
+.tag_right {
+  composes: tag_right from "../styles/typo.module.css";
 }
 
 .txtBubbleRes {
@@ -8,4 +53,8 @@
 
 .txtBubbleSent {
   composes: txtBubbleSent from "../styles/typo.module.css";
+}
+
+.visualyHidden {
+  composes: visualyHidden from "../styles/typo.module.css";
 }

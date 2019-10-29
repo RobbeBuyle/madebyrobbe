@@ -1,3 +1,55 @@
+.cardLink {
+  /* display: block; */
+  text-decoration: none;
+}
+
+.projectCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:
+    "ppImgContainer"
+    "ppTitle"
+    "ppTags";
+  grid-gap: 2.4rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.projectCard:hover {
+  transform: scale(1.01);
+  transition: 0.15s ease-in-out;
+}
+
+.ppImgContainer {
+  grid-area: ppImgContainer;
+  display: block;
+  height: 20rem;
+}
+
+.ppImg {
+  grid-area: ppImg;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
+}
+
 .ppTitle {
-  color: red;
+  composes: ppTitle from "../styles/typo.module.css";
+  grid-area: ppTitle;
+  margin: 0 1.4rem;
+}
+
+.ppTags {
+  composes: paragraph from "../styles/typo.module.css";
+  grid-area: ppTags;
+  color: var(--color-darkGrey);
+  margin: 0 1.4rem 4.4rem 1.4rem;
+
+  @media (min-width: 0px) {
+    font-size: 1.5rem;
+  }
 }

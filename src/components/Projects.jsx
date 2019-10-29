@@ -29,27 +29,29 @@ const Projects = () => {
   const projects = data.allProjectsJson.edges
 
   return (
-    <section>
+    <>
       <h2 className={styles.sectionTitle}>Some of my work</h2>
-      {projects.map(({ node: project }) => {
-        const id = project.id
-        const title = project.title
-        const tags = project.tags
-        const slug = project.slug
-        const imageData = project.img.childImageSharp.fluid
+      <section className={styles.projectsContainer}>
+        {projects.map(({ node: project }) => {
+          const id = project.id
+          const title = project.title
+          const tags = project.tags
+          const slug = project.slug
+          const imageData = project.img.childImageSharp.fluid
 
-        return (
-          <ProjectPreview
-            title={title}
-            imageData={imageData}
-            tags={tags}
-            id={id}
-            key={id}
-            slug={slug}
-          />
-        )
-      })}
-    </section>
+          return (
+            <ProjectPreview
+              title={title}
+              imageData={imageData}
+              tags={tags}
+              id={id}
+              key={id}
+              slug={slug}
+            />
+          )
+        })}
+      </section>
+    </>
   )
 }
 
