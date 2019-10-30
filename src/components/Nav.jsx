@@ -14,20 +14,30 @@ const Nav = () => {
   return (
     <>
       {/* <Lottie options={defaultOptions} className={styles.logoAnim} /> */}
-      <nav className={styles.nav}>
-        <Link to="/" className={styles.navLogo}>
-          Robbe
-          <span className={styles.visualyHidden}>Robbe</span>
-        </Link>
-
-        <div>
-          <Link to="/" className={styles.navItem}>
-            Home
-          </Link>
-          <a href="https://medium.com/@robbebuyle" className={styles.navItem}>
-            Blog
-          </a>
-        </div>
+      <nav>
+        <ul className={styles.nav}>
+          <li className={styles.li}>
+            <Link to="/" className={styles.navLogo}>
+              Robbe
+              <span className={styles.visualyHidden}>Robbe</span>
+            </Link>
+          </li>
+          <div>
+            <li className={styles.li}>
+              <Link to="/" className={styles.navItem}>
+                Home
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <a
+                href="https://medium.com/@robbebuyle"
+                className={styles.navItem}
+              >
+                Blog
+              </a>
+            </li>
+          </div>
+        </ul>
       </nav>
     </>
   )

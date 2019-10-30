@@ -3,6 +3,12 @@
   --color-lightGrey: #f1f1f1;
   --color-darkGrey: #3e3e3e;
   --color-green: #08cd4d;
+  --color-dev: #1a182b;
+  --gradient-des: linear-gradient(180deg, #ece5f9 0%, #fad3d4 100%);
+}
+
+.gradienet-des {
+  background-image: var(--gradient-des);
 }
 
 .color-lightGrey {
@@ -19,4 +25,11 @@
 
 .black {
   color: var(--color-black);
+}
+
+.box {
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
 }
