@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <>
       {/* <Lottie options={defaultOptions} className={styles.logoAnim} /> */}
-      <nav>
+      <nav className={styles.navContainer}>
         <ul className={styles.nav}>
           <li className={styles.li}>
             <Link to="/" className={styles.navLogo}>

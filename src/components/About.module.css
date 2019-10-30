@@ -2,6 +2,13 @@
   composes: paragraph from "../styles/typo.module.css";
   text-align: center;
   color: var(--color-darkGrey);
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.strong {
+  composes: strong from "../styles/typo.module.css";
 }
 
 .sectionTitle {
@@ -29,7 +36,7 @@
   grid-area: modules;
   display: grid;
   grid-gap: 2.4rem;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
 }
 
 .module {

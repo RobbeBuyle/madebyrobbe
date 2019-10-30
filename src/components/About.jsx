@@ -8,9 +8,10 @@ const About = () => {
       <h2 className={styles.sectionTitle}>About me</h2>
       <p className={styles.paragraph}>
         I’m a Digital Design and Development student at Howest based in the
-        fries-and-wafflecountry, also known as Belgium. I’m really passionate
-        about creating human-centric and performant digital products by using
-        the latest technologies.
+        fries-and-wafflecountry, also known as{" "}
+        <strong className={styles.strong}>Belgium.</strong> I’m really
+        passionate about creating human-centric and performant digital products
+        by using the latest technologies.
       </p>
       <div className={styles.gridContainer}>
         <section className={styles.moduleContainer}>

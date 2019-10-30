@@ -47,7 +47,13 @@ const Header = () => {
           </p>
         </div>
         <div className={styles.tag_right}>
-          <p className={styles.txtBubbleSent}>contact</p>
+          {/* <p className={styles.txtBubbleSent}>contact</p> */}
+          <a
+            href="mailto:robbedoesstuff@gmail.com"
+            className={styles.txtBubbleSent}
+          >
+            contact
+          </a>
         </div>
       </div>
     </header>

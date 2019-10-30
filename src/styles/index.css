@@ -26,4 +26,13 @@ body {
 
 .container {
   margin: 0 1rem;
+
+  /* @media (min-width: 900px) {
+    margin: 0 2rem;
+  } */
+}
+
+.contentContainer {
+  max-width: 102rem;
+  margin: 0 auto;
 }
