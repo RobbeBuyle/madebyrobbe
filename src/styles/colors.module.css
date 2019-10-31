@@ -1,6 +1,7 @@
 :global(:root) {
   --color-black: #060606;
   --color-lightGrey: #f1f1f1;
+  --color-grey: #808080;
   --color-darkGrey: #3e3e3e;
   --color-green: #08cd4d;
   --color-dev: #1a182b;

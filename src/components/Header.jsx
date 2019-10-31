@@ -25,6 +25,7 @@ const Header = () => {
       <Img
         fluid={data.file.childImageSharp.fluid}
         className={styles.headerImg}
+        alt="me during the winter :)"
       />
       <div className={styles.chatBox}>
         <div className={styles.tag}>

@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Project from "../components/Project"
 
@@ -37,7 +37,6 @@ const ProjectTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <Link to="/">Back to all projects</Link>
       <Project
         imageData={imageData}
         title={title}

@@ -5,7 +5,12 @@ import logo from "../../static/Robbe_logo_small.svg"
 const Footer = () => {
   return (
     <footer className={styles.footerContainer}>
-      <img src={logo} width="120" className={styles.logo_big} />
+      <img
+        src={logo}
+        width="120"
+        className={styles.logo_big}
+        alt="Robbe logo"
+      />
       <div>
         <address className={styles.email}>
           <a href="mailto:robbedoesstuff@gmail.com" className={styles.email}>
