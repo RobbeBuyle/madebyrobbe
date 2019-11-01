@@ -18,7 +18,7 @@ module.exports = {
       options: {
         custom: {
           families: ["Biotif"],
-          urls: [`${__dirname}/src/styles/fonts.css`],
+          urls: [`${__dirname}/static/fonts.css`],
         },
       },
     },

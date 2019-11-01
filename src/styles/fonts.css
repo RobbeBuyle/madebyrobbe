@@ -1,27 +1,27 @@
 @font-face {
   font-family: "Biotif";
   font-weight: regular;
-  src: url("../../static/fonts/Biotif-Book.woff"),
-    url("../../static/fonts/Biotif-Book.woff2");
+  src: url("../../static/fonts/Biotif-Book.woff") format("woff"),
+    url("../../static/fonts/Biotif-Book.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Biotif";
   font-weight: bold;
-  src: url("../../static/fonts/Biotif-Bold.woff"),
-    url("../../static/fonts/Biotif-Bold.woff2");
+  src: url("../../static/fonts/Biotif-Bold.woff") format("woff"),
+    url("../../static/fonts/Biotif-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Biotif";
   font-weight: bolder;
-  src: url("../../static/fonts/Biotif-ExtraBold.woff"),
-    url("../../static/fonts/Biotif-ExtraBold.woff2");
+  src: url("../../static/fonts/Biotif-ExtraBold.woff") format("woff"),
+    url("../../static/fonts/Biotif-ExtraBold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Biotif";
-  font-weight: 500;
-  src: url("../../static/fonts/Biotif-Medium.woff"),
-    url("../../static/fonts/Biotif-Medium.woff2");
+  font-weight: 400;
+  src: url("../../static/fonts/Biotif-Medium.woff") format("woff"),
+    url("../../static/fonts/Biotif-Medium.woff2") format("woff2");
 }
