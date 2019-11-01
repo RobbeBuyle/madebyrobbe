@@ -5,7 +5,7 @@ import Header from "../components/Header.jsx"
 import Projects from "../components/Projects.jsx"
 import About from "../components/About.jsx"
 
-import "../styles/fonts.css"
+import "../../static/fonts.css"
 
 export default () => {
   return (
